@@ -1,0 +1,170 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/lora";
+@import "@fontsource-variable/dm-sans";
+@import "@fontsource-variable/jetbrains-mono";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-heading: 'Lora Variable', Georgia, serif;
+    --font-sans: 'DM Sans Variable', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+    --color-sidebar-ring: var(--sidebar-ring);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar: var(--sidebar);
+    --color-chart-5: var(--chart-5);
+    --color-chart-4: var(--chart-4);
+    --color-chart-3: var(--chart-3);
+    --color-chart-2: var(--chart-2);
+    --color-chart-1: var(--chart-1);
+    --color-ring: var(--ring);
+    --color-input: var(--input);
+    --color-border: var(--border);
+    --color-destructive: var(--destructive);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-accent: var(--accent);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted: var(--muted);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-secondary: var(--secondary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-primary: var(--primary);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-popover: var(--popover);
+    --color-card-foreground: var(--card-foreground);
+    --color-card: var(--card);
+    --color-foreground: var(--foreground);
+    --color-background: var(--background);
+    --radius-sm: calc(var(--radius) * 0.6);
+    --radius-md: calc(var(--radius) * 0.8);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) * 1.4);
+    --radius-2xl: calc(var(--radius) * 1.8);
+    --radius-3xl: calc(var(--radius) * 2.2);
+    --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* Warm kraft-paper scrapbook palette (light is the default; see design_guidelines.json) */
+:root {
+    --background: #F5EFEB;
+    --foreground: #2B2118;
+    --card: #FAF5F0;
+    --card-foreground: #2A211B;
+    --popover: #FBF7ED;
+    --popover-foreground: #261C14;
+    --primary: #9E3D24;
+    --primary-foreground: #FFFFFF;
+    --secondary: #ECE2D0;
+    --secondary-foreground: #231B15;
+    --muted: #EDE1D3;
+    --muted-foreground: #6E5B4B;
+    --accent: #B85D19;
+    --accent-foreground: #FFFFFF;
+    --destructive: #B82E24;
+    --border: #D9CAB8;
+    --input: #D9CAB8;
+    --ring: #9E3D24;
+    --chart-1: #9E3D24;
+    --chart-2: #C68B2C;
+    --chart-3: #6E5B4B;
+    --chart-4: #B85D19;
+    --chart-5: #3D312A;
+    --radius: 0.625rem;
+    --sidebar: #ECE2D0;
+    --sidebar-foreground: #2B2118;
+    --sidebar-primary: #9E3D24;
+    --sidebar-primary-foreground: #FFFFFF;
+    --sidebar-accent: #E6D3A3;
+    --sidebar-accent-foreground: #2B2118;
+    --sidebar-border: #D9CAB8;
+    --sidebar-ring: #9E3D24;
+}
+
+/* Dark leather-spine variant (rarely active — the scrapbook is light-by-default) */
+.dark {
+    --background: #36261C;
+    --foreground: #FDF9F3;
+    --card: #4A3528;
+    --card-foreground: #FDF9F3;
+    --popover: #4A3528;
+    --popover-foreground: #FDF9F3;
+    --primary: #E3BA64;
+    --primary-foreground: #36261C;
+    --secondary: #4A3528;
+    --secondary-foreground: #FDF9F3;
+    --muted: #4A3528;
+    --muted-foreground: #D6C7B2;
+    --accent: #E3BA64;
+    --accent-foreground: #36261C;
+    --destructive: #B82E24;
+    --border: #5C4534;
+    --input: #5C4534;
+    --ring: #E3BA64;
+    --chart-1: #E3BA64;
+    --chart-2: #B85D19;
+    --chart-3: #D6C7B2;
+    --chart-4: #9E3D24;
+    --chart-5: #FDF9F3;
+    --sidebar: #4A3528;
+    --sidebar-foreground: #FDF9F3;
+    --sidebar-primary: #E3BA64;
+    --sidebar-primary-foreground: #36261C;
+    --sidebar-accent: #5C4534;
+    --sidebar-accent-foreground: #FDF9F3;
+    --sidebar-border: #5C4534;
+    --sidebar-ring: #E3BA64;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+  html {
+    @apply font-sans;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ── Scrapbook artifacts ─────────────────────────────────────────────────── */
+
+/* Subtle paper grain over the whole page (pointer-transparent, multiply blend) */
+.paper-grain::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  opacity: 0.14;
+  mix-blend-mode: multiply;
+}
+
+/* Washi tape strip (positioned by the parent) */
+.washi-tape {
+  background: rgba(230, 211, 163, 0.88);
+  border-left: 1px dashed rgba(43, 33, 24, 0.18);
+  border-right: 1px dashed rgba(43, 33, 24, 0.18);
+  box-shadow: 0 1px 2px rgba(43, 33, 24, 0.12);
+}
+
+/* Embossed book-jacket lettering */
+.embossed {
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.55),
+    0 -1px 1px rgba(43, 33, 24, 0.3);
+}
