@@ -55,9 +55,9 @@ export const chapters: Chapter[] = [
     kicker: "Chapter One · Me & My World",
     title: "The Kid with the Notebook",
     paragraphs: [
-      "I'm L — a Grade 10 student, I'm usually quiet around people i just met. I'm the kind of person who keeps two things on the nightstand, hand wraps and books. I say little in a group discussion, then go home and think about it for a week. Learning, making things, chasing new ideas, that's where I'm most myself.",
-      "My notebook is full of halfbuilt things like AI experiments, video ideas, business plans I'm too young to launch and too curious not to attempt. Ai, technology, video creation, business, investing,that's the things my brain lives on.",
-      "I grew up in a small, loud house where somebody was always laughing, arguing, or asking what's for dinner. These days, the loudest voice belongs to my baby sister and I'd recognise that noise anywhere. It's the sound of my whole story starting.",
+      "I'm L, a Grade 10 student, I am almost so quiet with the people i just met because i am a overthinking guy who always thinks what if the person in the other side doesn't like the way I talk and all. I'm the kind of person who keeps two things on the nightstand, hand wraps and books.I usually doesn't talk much in a group but regret that when I'm on my way back to home . Learning, making things, chasing new ideas, that's where I'm mostly busy during my free times.",
+      "My notebook is mostly full of halfbuilt things like ai projects, apps, websites,dropshipping etc, etc which i did out of curiosity but coudn't publish it yet because of my younger age and money requirements which im not ready to risk yet since success isn't guarenteed. Ai, technology, video creation, business, investing,that's the things which i mainly focus on when im free because those are the things with more scope in future than normal 9-5 jobs.",
+      "I grew up in a small house with my aunt and her kids and later moved with my parents for the first time when i had my sister. Before that i lived with my aunt for 8 years.But nowadays, the loudest voice belongs to my baby sister and I'd recognise that noise anywhere. It's the sound of my whole story starting.",
       "I'm still figuring out exactly where my future takes me, but the plan is simple, keep learning, become a better version of myself, build something of my own one day, and use whatever success I find to take care of my family. This page is chapter one of that.",
     ],
     facts: ["Grade 10 · quiet by choice", "Into AI, tech & video", "Learning business & investing", "Nightstand: hand wraps + books"],
@@ -73,8 +73,8 @@ export const chapters: Chapter[] = [
     kicker: "Chapter Two · My Boxing Life",
     title: "The Sweet Science",
     paragraphs: [
-      "My boxing life starts at 5:00 PM, when school lets go of me and the day changes gears. From 5 to 6 it's hand wraps, skipping ropes and heavy bags, one hour where the only notification that matters is the round bell.",
-      "People think boxing is about fists. It's not. It taught me discipline on a schedule, patience under pressure, confidence earned one round at a time, and resilience,getting hit, adjusting and coming back. The gym taught me things more than any classroom ever did.",
+      "My boxing life start at 5pm and ends at 6pm and that's the time when i forget my overthinking and introverted side and turn into a different version of me . From 5 to 6 it's hand wraps, skipping ropes and heavy bags, one hour where the only notification that matters is the round bell.",
+      "People think boxing is about throwing punches. It's not. It taught me discipline, patience under pressure, confidence that I need to earn one round at a time, and resilience,getting hit, adjusting and coming back. The gym taught me things more than any classroom ever did and ever will.",
       "I'm not chasing a belt (yet). I'm chasing the version of me that doesn't quit in round three.",
     ],
     facts: ["5–6 PM, every session", "Jab · cross · breathe", "Favourite round: the last one"],
@@ -96,9 +96,9 @@ export const chapters: Chapter[] = [
     kicker: "Chapter Three · My Little Sister",
     title: "The Boss of the House",
     paragraphs: [
-      "My little sister is four months old, and in four months she has taken over the entire house. She doesn't walk, talk, or lift a finger.She just cries, and every adult in the building moves like it's an emergency. Because it is.",
-      "I'm the big brother, which turns out to be a job title, not a birth order. I check if she's asleep. I warm her bottle wrong and got corrected thrice. I've learned that a person who can't even roll over yet can run the whole family.",
-      "Everyone says I'm the one protecting her. Honestly, she's the one who made me want to be worth protecting. Everything in this book, I'm building a little bit for her.",
+      "My little sister is four months old, and in four months she has taken over the entire house. She doesn't walk, talk, or lift a finger.She just cries, and every person in the building moves like it's an emergency. Because it kinda is.",
+      "I'm the big brother, which turns out to be a job title, more than a sibling thing . I check if she's asleep. I warm her bottle wrong and got corrected thrice, to be honest, at this point i felt like she was my onw daughter. I've learned that a person who can't even roll over yet can run the whole family.",
+      "Everyone says I'm the one protecting her. Honestly, she's the one who made me want work hard so i can protect her in future. Everything in this book, I'm building a little bit for her.",
     ],
     facts: ["4 months old", "Runs the house", "Best worst alarm clock", "My biggest why"],
     memories: [
@@ -120,8 +120,8 @@ export const chapters: Chapter[] = [
     paragraphs: [
       "Everything strong in me was built at a dinner table. My family works quietly, early shifts, packed lunches.",
       "A big part of my childhood belongs to my aunt. I grew up spending much of my time in her care, and a lot of what's steady in me was built there, the habits, the patience, the quiet belief that I can become more than I currently am.",
-      "They come to every match, every school event, every small thing I've ever done. Half the time they don't understand the sport, all of the time they understand me.",
-      "If this story has a moral, my family is it, show up for people, feed them well, and don't make a big speech about it.",
+      "They never came to a single match due to the busy life but still showed me thier support and love at home , every school event i participated, every small thing I've ever done was all with the support from her. Half the time they don't understand the sport, all of the time they understand me.",
+      "If this story has a moral, my family is it, support is important than just showing up for people, feed them well, and don't make a big speech about it.",
     ],
     facts: ["Table of 4, chairs for more", "Loud at matches", "Quieter in love"],
     traditions: [
@@ -141,7 +141,7 @@ export const chapters: Chapter[] = [
     kicker: "Chapter Five · The Books I Read",
     title: "Pages That Shaped Me",
     paragraphs: [
-      "Books are the quietest things in my house and the loudest things in my head. Between training sessions and homework, I escape into paperbacks until they go soft at the corners.",
+      "Books are the quietest things in my house and the loudest things in my head. Between training sessions and homework, I escape into books until my body and mind cools down and I know that's the time to sleep.",
       "I write in the margins now , little arguments with the author, stars next to sentences I want to keep. Here's my shelf, with the notes that stayed.",
     ],
     facts: ["Margins, defaced", "Paperback > screen", "One chapter before sleep"],
